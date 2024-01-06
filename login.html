@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+     <title>Book Store Management</title>
+    <style>
+        body {
+            background-color: #2E51FF;
+            background-size: cover;
+        }
+       .row {
+
+            display: relative;
+            top: 50%;   }
+
+
+        .sec2 {
+            background-color: #fff;
+            position: relative;
+            margin-top: 4.7rem;
+        }
+
+        .img-fluid {
+            height: 500px;
+        }
+
+        .log-heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        .add_inc {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        hr {
+            color: #6e707e;
+            width: 75%;
+            text-align: center;
+            margin: auto;
+            margin-top: 2rem;
+        }
+
+        @media only screen and (min-width:0px) and (max-width:992px) {
+            .hidden {
+                display: none;
+            }
+
+            .sec2 {
+                 overflow: hidden;
+                width: 100%;
+                height: 100%;
+                text-align: justify;
+                margin-right: 1rem;
+                overflow-x: hidden;
+                margin-top: 15%;
+            }
+
+            body {
+                max-width: 1500px;
+                height: 600px;
+            }
+
+            .login_btn,.btn-google,.btn-facebook {
+                width: 90%;
+                border-radius: 20px;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            .login-submit {
+                text-align: center;
+                margin-bottom: rem;
+            }
+
+            .form-control {
+                border-radius: 10rem;
+                line-height: 1.5;
+                padding: 1rem;
+                color: #6e707e;
+            }
+
+            .google {
+                display: flex;
+                justify-content: center;
+            }
+
+            .facebook {
+                display: flex;
+                justify-content: center;
+            }
+
+            .small{
+                color:#4e73df;
+                text-decoration: none;
+            }
+        }
+
+        @media only screen and (min-width:993px) {
+            .sec2 {
+                background-color: #fff;
+                position: relative;
+                right: 10%;
+                margin-top: 4.7rem;
+                border-radius: 5px;
+            }
+
+            .login {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            body {
+                max-width: 1500px;
+                height: 800px;
+            }
+
+            .login_btn {
+                width: 90%;
+                border-radius: 20px;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+
+            .login-submit {
+                text-align: center;
+            }
+
+            .form-control {
+                border-radius: 10rem;
+                line-height: 1.5;
+                padding: 1rem;
+                color: #6e707e;
+            }
+
+            .btn-google,
+            .btn-facebook {
+                width: 90%;
+                border-radius: 20px;
+                font-size: 1.2rem;
+                margin: auto;
+                margin-top: 1rem;
+            }
+
+            .google {
+                display: flex;
+                justify-content: center;
+            }
+
+            .facebook {
+                display: flex;
+                justify-content: center;
+            }
+
+            .small{
+                color:#4e73df;
+                text-decoration: none; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4  hidden" style="text-align: center; margin: auto; margin-top: 4.7rem;">
+                    <img src="img/registration.jpg" alt="" class="" width="100%" height="610px">
+                </div>
+
+                <div class="col-md-6 col-sm-12 sec2 ">
+                    <h1 class="log-heading text-center pt-4">Welcome Back !</h1>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="form-group w-75 mb-4 mt-5 " style="margin:auto;">
+                            <input type="email" name="email" id="" class="form-control form-control-user mb-3 mt-5 " placeholder="Enter Email Address" required>
+                        </div>
+                        <div class="form-group mb-3 w-75 mt-3" style="margin:auto;">
+
+                            <input type="password" name="password" id="" class="form-control form-control-user " placeholder="Enter Password" required>
+                        </div>
+                        <div class="form-group mb-3 mt-3 login-submit">
+                            <input type="submit" value="Login" class="btn btn-primary login_btn" name="login_btn" style="padding:7px;">
+                        </div>
+                        <hr>
+                        <div class="google">
+                            <a href="index.html" class="btn btn-google btn-user btn-block btn-danger ">
+                                <i class="fab fa-google fa-fw"></i> Login with Google
+                            </a>
+                        </div>
+                        <div class="facebook">
+                            <a href="index.html" class="btn btn-facebook btn-user btn-block btn-primary ">
+                                <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                            </a>
+                        </div>
+                        <hr>
+                     </form>
+                        <div class="text-center mt-2">
+                            <a class="small" href="">Forgot Password?</a>
+                        </div>
+                        <div class="text-center mt-2">
+                            <a class="small" href="">Create an Account!</a>
+                        </div>
+                </div>
+            </div>
+ </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
